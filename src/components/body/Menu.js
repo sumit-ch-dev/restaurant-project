@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DISHES from '../../data/dishes';
 import MenuItem from './MenuItem';
 import DishDetail from './DishDetail';
+import { CardColumns, Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
 
 class Menu extends Component {
     state = {
@@ -32,12 +33,10 @@ class Menu extends Component {
         return (
             <div className='container'>
                 <div className='row'>
-                    <div className='col-6'>
+                    <CardColumns>
                         {menu}
-                    </div>
-                    <div className='col-6'>
-                        {dishDetail}
-                    </div>
+                    </CardColumns>
+                    
                 </div>
             </div>
         );
