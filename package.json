@@ -1,7 +1,7 @@
 {
   "name": "restaurant-project",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/restaurant-project",
+  "homepage": "https://sumit1729.github.io/restaurant-project",
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.11.6",
