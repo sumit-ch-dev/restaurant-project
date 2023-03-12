@@ -43,9 +43,9 @@ class Menu extends Component {
         return (
             <div className='container'>
                 <div className='row'>
-                    <CardColumns>
+                    <div className="d-flex p-2">
                         {menu}
-                    </CardColumns>
+                    </div>
                     <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
                         <ModalBody>
                             {dishDetail}
