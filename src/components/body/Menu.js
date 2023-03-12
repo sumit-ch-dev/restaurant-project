@@ -43,11 +43,9 @@ class Menu extends Component {
         return (
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-auto'>
-                        <CardColumns>
-                            {menu}
-                        </CardColumns>
-                    </div>
+                    <CardColumns>
+                        {menu}
+                    </CardColumns>
                     <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
                         <ModalBody>
                             {dishDetail}

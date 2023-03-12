@@ -32,6 +32,9 @@ class Navigation extends Component {
                                 <NavItem>
                                     <Link to="/about" className="nav-link">About</Link>
                                 </NavItem>
+                                <NavItem>
+                                    <Link to="/contact" className="nav-link">Contact</Link>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
