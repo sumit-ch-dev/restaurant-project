@@ -3,6 +3,7 @@ import DISHES from '../../data/dishes';
 import MenuItem from './MenuItem';
 import DishDetail from './DishDetail';
 import { Card, CardColumns, Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
+import { CardGroup } from 'react-bootstrap';
 
 class Menu extends Component {
     state = {
@@ -43,9 +44,9 @@ class Menu extends Component {
         return (
             <div className='container'>
                 <div className='row'>
-                    <div className="d-flex p-2">
+                    <CardGroup>
                         {menu}
-                    </div>
+                    </CardGroup>
                     <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
                         <ModalBody>
                             {dishDetail}
