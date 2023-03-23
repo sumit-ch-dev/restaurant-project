@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
 
+
+
 class Contact extends Component {
   constructor(props) {
     super(props)
@@ -111,7 +113,7 @@ class Contact extends Component {
                         checked={this.state.agree}
                         onChange={this.handleInputChange}
                       />
-                      <strong>How May we contact you?</strong>
+                      <strong>May we contact you?</strong>
                     </Label>
                   </FormGroup>
                 </Col>
