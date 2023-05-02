@@ -1,25 +1,9 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
+import {CardBody, CardImg, CardImgOverlay, CardTitle} from 'reactstrap';
 
 const MenuItem = props => {
     return (
-<<<<<<< HEAD
-        <Card onClick={props.DishSelect}>
-            <Card.Img
-                className="img-fluid img-thumbnail"
-                alt={props.dish.name}
-                src={props.dish.image}
-                style={{ height: "10rem", opacity: "0.5", objectFit: "cover" }} />
-            <Card.Body>
-
-                <Card.Title
-                    style={{ cursor: "pointer" }}
-                >
-                    {props.dish.name}
-                </Card.Title>
-            </Card.Body>
-        </Card>
-=======
         <div>
             <Card style={{ margin: "10px" }} onClick={props.DishSelect}>
                 <CardBody>
@@ -38,7 +22,6 @@ const MenuItem = props => {
                 </CardBody>
             </Card>
         </div>
->>>>>>> b9ab762bd34fe9debbd9857cf4a559747656eff4
     );
 }
 
