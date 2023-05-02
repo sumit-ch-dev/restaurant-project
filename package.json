@@ -15,10 +15,12 @@
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-popper": "^2.3.0",
+    "react-redux": "^8.0.5",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "reactstrap": "^9.1.5",
+    "redux": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -48,6 +50,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@reduxjs/toolkit": "^1.9.4",
+    "@types/react": "^18.0.35",
+    "add": "^2.0.6",
+    "gh-pages": "^5.0.0",
+    "yarn": "^1.22.19"
   }
 }
