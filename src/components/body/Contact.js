@@ -22,7 +22,7 @@ class Contact extends Component {
                     <div className="col-12">
                         <h3>send us your feedback</h3>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 col-md-7">
                         <Form>
                             <FormGroup row>
                                 <Label htmlFor='Firstname' md={2}>First Name</Label>
@@ -66,7 +66,7 @@ class Contact extends Component {
                                         value={this.state.email}></Input>
                                 </Col>
                             </FormGroup>
-                            <FormGroup>
+                            <FormGroup row>
                                 <Col md={{ size: 6, offset: 2 }}>
                                     <FormGroup check>
                                         <Label check>
@@ -76,7 +76,7 @@ class Contact extends Component {
                                                 checked={this.state.agree}
                                             />
                                             <strong>
-                                                How May we contact you?
+                                                May we contact you?
                                             </strong>
                                         </Label>
                                     </FormGroup>

@@ -1,26 +1,23 @@
 import React from "react";
-import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from 'reactstrap';
+import Card from 'react-bootstrap/Card';
 
 const MenuItem = props => {
     return (
-        <div>
-            <Card style={{ margin: "10px" }}>
-                <CardBody>
-                    <CardImg
-                        width="100%"
-                        alt={props.dish.name}
-                        src={props.dish.image}
-                        style={{ opacity: "0.5" }} />
-                    <CardImgOverlay>
-                        <CardTitle
-                            style={{ cursor: "pointer" }}
-                            onClick={props.DishSelect}>
-                            {props.dish.name}
-                        </CardTitle>
-                    </CardImgOverlay>
-                </CardBody>
-            </Card>
-        </div>
+        <Card onClick={props.DishSelect}>
+            <Card.Img
+                className="img-fluid img-thumbnail"
+                alt={props.dish.name}
+                src={props.dish.image}
+                style={{ height: "10rem", opacity: "0.5", objectFit: "cover" }} />
+            <Card.Body>
+
+                <Card.Title
+                    style={{ cursor: "pointer" }}
+                >
+                    {props.dish.name}
+                </Card.Title>
+            </Card.Body>
+        </Card>
     );
 }
 
