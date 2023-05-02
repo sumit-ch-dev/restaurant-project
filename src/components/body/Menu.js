@@ -3,7 +3,7 @@ import DISHES from '../../data/dishes';
 import COMMENTS from '../../data/comments';
 import MenuItem from './MenuItem';
 import DishDetail from './DishDetail';
-import { Card, CardColumns, Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
+import { Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
 
 class Menu extends Component {
     state = {
